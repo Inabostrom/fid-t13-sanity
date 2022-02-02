@@ -8,6 +8,16 @@ export default {
       title: 'Name',
       type: 'string',
     },
+  { 
+    name: 'phone',
+    title: 'Phone',
+    type: 'string',
+  },
+  { 
+    name: 'email',
+    title: 'Email',
+    type: 'string',
+  },
     {
       name: 'slug',
       title: 'Slug',
@@ -26,6 +36,19 @@ export default {
       },
     },
     {
+      name: 'shortIntro',
+      title: 'Short Intro',
+      type: 'array',
+      of: [
+        {
+          title: 'Block',
+          type: 'block',
+          styles: [{title: 'Normal', value: 'normal'}],
+          lists: [],
+        },
+      ],
+    },
+    {
       name: 'bio',
       title: 'Bio',
       type: 'array',
@@ -38,6 +61,7 @@ export default {
         },
       ],
     },
+   
   ],
   preview: {
     select: {
