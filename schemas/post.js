@@ -24,6 +24,17 @@ export default {
       to: {type: 'author'},
     },
     {
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: {type: 'category'},
+    },
+    {
+      name: 'headerText',
+      title: 'Header text',
+      type: 'string',
+    },
+    {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -46,6 +57,17 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    },
+    {
+      name: 'prosess',
+      title: 'Prosess',
+      type: 'blockContent',
+    },
+    {
+      name: 'colors',
+      title: 'Colors',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'colors'}}],
     },
   ],
 
